@@ -1,5 +1,7 @@
 // components/HeroSection.jsx
 import Courses from "./Courses";
+import image4 from '../../assets/image 4.png';
+
 
 const HeroSection = () => {
   return (
@@ -144,7 +146,7 @@ const HeroSection = () => {
 
           {/* Main Illustration Image */}
           <img
-            src="src/assets\image 4.png" 
+            src={image4} 
             alt="Learning Illustration"
             style={{
               width: "370px",
@@ -211,7 +213,8 @@ const HeroSection = () => {
 <div
   style={{
     top: "160px",
-    left: "1250px",
+    left: "1265px",
+    width:"250px",
     boxShadow: "2px 8px 29px 0px #00000066", // Added box shadow
   opacity:0.8,
     zIndex:2,
@@ -384,4 +387,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default HeroSection
