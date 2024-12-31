@@ -17,12 +17,12 @@ import Tech from "../TECH/Tech"; // Ensure the correct path
 import TrustedPartners from "../Home/TrustedPartners"; // Corrected path
 import Contact from "../Contact"; // Ensure the correct path
 import chef from '../Hero/Chef.png';
-import Doctor from '../Hero/Doctor with microscope.png';
-import researcher from "../Hero/researcher.png";
-import civil from "../Hero/civil.png";
-import electrical from "../Hero/electrical engg.png";
-import student01 from "../Hero/student01.png";
-import chem from "../Hero/chem_lab.png";
+import Doctor from "../Hero/Doctor_with_microscope.png";
+import researcher from "../Hero/Researcher.png";
+import civil from "../Hero/Civil.png";
+import electrical from "../Hero/electrical_engg.png";
+import student01 from "../Hero/Student01.png";
+import chem from "../Hero/Chem_lab.png";
 
 export default function HeroSection() { // Corrected component name
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -30,42 +30,42 @@ export default function HeroSection() { // Corrected component name
   // Array of image objects with profession labels
   const images = [
    {
-         src: {chef} ,
+         src: chef,
          alt: "Chef in professional kitchen",
          profession: "Culinary Arts",
  },
        {
-         src: {Doctor},
+         src: Doctor,
          alt: "Doctor with microscope",
          profession: "Healthcare",
    
        },
        {
-         src: {civil},
+         src: civil,
          alt: "Engineer at work",
          profession: "Engineering",
      
        },
        {
-         src: {chem},
+         src: chem,
          alt: "chem_lab",
          profession: "chemistry",
      
        },
        {
-         src: {student01},
+         src: student01,
          alt: "student01",
          profession: "student",
   
        },
        {
-         src: {electrical} ,
+         src: electrical ,
          alt: "electrical engg",
          profession: "Engineering",
      
        },
        {
-         src: {researcher},
+         src: researcher,
          alt: "Doctor with microscope",
          profession: "Healthcare",
     },
