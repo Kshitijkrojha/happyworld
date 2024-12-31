@@ -23,37 +23,37 @@ export default function HomePage() { // Corrected component name
   // Array of image objects with profession labels
   const images = [
     {
-      url: "/src/assets/chef.png?height=600&width=1200",
+      url: "/assets/chef.png?height=600&width=1200",
       alt: "Chef in professional kitchen",
       profession: "Culinary Arts",
     },
     {
-      url: "/src/assets/Doctor with microscope.png?height=600&width=1200",
+      url: "/assets/Doctor with microscope.png?height=600&width=1200",
       alt: "Doctor with microscope",
       profession: "Healthcare",
     },
     {
-      url: "/src/assets/civil engg.png?height=600&width=1200",
+      url: "/assets/civil engg.png?height=600&width=1200",
       alt: "Engineer at work",
       profession: "Engineering",
     },
     {
-      url: "/src/assets/chem_lab.png?height=600&width=1200",
+      url: "/assets/chem_lab.png?height=600&width=1200",
       alt: "chem_lab",
       profession: "chemistry",
     },
     {
-      url: "/src/assets/student01.png?height=600&width=1200",
+      url: "/assets/student01.png?height=600&width=1200",
       alt: "student01",
       profession: "student",
     },
     {
-      url: "/src/assets/electrical engg.png?height=600&width=1200",
+      url: "/assets/electrical engg.png?height=600&width=1200",
       alt: "electrical engg",
       profession: "Engineering",
     },
     {
-      url: "/src/assets/researcher.png?height=600&width=1200",
+      url: "/assets/researcher.png?height=600&width=1200",
       alt: "Doctor with microscope",
       profession: "Healthcare",
     },
