@@ -1,7 +1,20 @@
 // components/HeroSection.jsx
 import Courses from "./Courses";
 import image4 from '../../assets/image 4.png';
-
+import adani from '../../assets/adani.png';
+import epin from '../../assets/e-pin.png';
+import nilm from '../../assets/nilm.png';
+import padget from '../../assets/padget.png';
+import ak from '../../assets/ak.png';
+import turners from '../../assets/turners.png';
+import Dixon from '../../assets/Dixon.png';
+import subros from '../../assets/subros.png';
+import nsdc from '../../assets/nsdc.png';
+import isid from '../../assets/isid.png';
+import global from '../../assets/global.png';
+import capro from '../../assets/capro.png';
+import image11 from '../../assets/image 11.png';
+import man from '../../assets/man.png';
 
 const HeroSection = () => {
   return (
@@ -226,7 +239,7 @@ const HeroSection = () => {
     
    
   <img
-    src="src\assets\man.png" 
+    src={man}
     alt="Custom Icon"
     style={{
       width: "100%",
@@ -282,7 +295,7 @@ const HeroSection = () => {
 >
   
   <img
-    src="src\assets\image 11.png" 
+    src={image11} 
     alt="Custom Icon"
     style={{
       width: "100%",
@@ -364,18 +377,18 @@ const HeroSection = () => {
 >
   <div className="flex justify-center items-center h-full space-x-11 flex-wrap p-4 ">
    
-    <img src="src\assets\adani.png" alt="Logo 1" className="h-[80px] w-[80px] rounded-full" />
-    <img src="src\assets\e-pin.png" alt="Logo 2" className="h-[80px] w-[80px] rounded-full" />
-    <img src="src\assets\Dixon.png" alt="Logo 3" className="h-[80px] w-[80px] rounded-full" />
-    <img src="src\assets\subros.png" alt="Logo 4" className="h-[80px] w-[80px] rounded-full" />
-    <img src="src\assets\nsdc.png" alt="nsdc" className="h-[80px] w-[80px] rounded-full" />
-    <img src="src\assets\global.png" alt="global" className="h-[80px] w-[80px] rounded-full" />
-    <img src="src\assets\isid.png" alt="isid" className="h-[80px] w-[80px] rounded-full" />
-    <img src="src\assets\capro.png" alt="capro" className="h-[80px] w-[80px] rounded-full" />
-    <img src="src\assets\turners.png" alt="turners" className="h-[80px] w-[80px] rounded-full" />
-    <img src="src\assets\nilm.png" alt="nilm" className="h-[80px] w-[80px] rounded-full" />
-    <img src="src\assets\ak.png" alt="ak" className="h-[80px] w-[80px] rounded-full" />
-    <img src="src\assets\padget.png" alt="padget" className="h-[80px] w-[80px] rounded-full" />
+    <img src={adani}  alt="Logo 1" className="h-[80px] w-[80px] rounded-full" />
+    <img src={epin} alt="Logo 2" className="h-[80px] w-[80px] rounded-full" />
+    <img src={Dixon} alt="Logo 3" className="h-[80px] w-[80px] rounded-full" />
+    <img src={subros} alt="Logo 4" className="h-[80px] w-[80px] rounded-full" />
+    <img src={nsdc} alt="nsdc" className="h-[80px] w-[80px] rounded-full" />
+    <img src={global} alt="global" className="h-[80px] w-[80px] rounded-full" />
+    <img src={isid} alt="isid" className="h-[80px] w-[80px] rounded-full" />
+    <img src={capro} alt="capro" className="h-[80px] w-[80px] rounded-full" />
+    <img src={turners} alt="turners" className="h-[80px] w-[80px] rounded-full" />
+    <img src={nilm} alt="nilm" className="h-[80px] w-[80px] rounded-full" />
+    <img src={ak} alt="ak" className="h-[80px] w-[80px] rounded-full" />
+    <img src={padget} alt="padget" className="h-[80px] w-[80px] rounded-full" />
 
 
    
@@ -387,4 +400,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection
+export default HeroSection;

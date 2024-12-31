@@ -16,55 +16,60 @@ import '../Hero/Applynow.css'; // Ensure the correct path
 import Tech from "../TECH/Tech"; // Ensure the correct path
 import TrustedPartners from "../Home/TrustedPartners"; // Corrected path
 import Contact from "../Contact"; // Ensure the correct path
-import chef from "../../assets/chef.png";
-import Doctor from "../../assets/Doctor with microscope.png";
-import researcher from "../../assets/researcher.png";
-import civil from "../../assets/civil.png";
-import electrical from "../../assets/electrical engg.png";
-import student01 from "../../assets/student01.png";
-import chem from "../../assets/chem_lab.png";
+import chef from '../Hero/Chef.png';
+import Doctor from '../Hero/Doctor with microscope.png';
+import researcher from "../Hero/researcher.png";
+import civil from "../Hero/civil.png";
+import electrical from "../Hero/electrical engg.png";
+import student01 from "../Hero/student01.png";
+import chem from "../Hero/chem_lab.png";
 
 export default function HeroSection() { // Corrected component name
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Array of image objects with profession labels
   const images = [
-    {
-      image: chef ,
-      alt: "Chef in professional kitchen",
-      profession: "Culinary Arts",
+   {
+         src: chef ,
+         alt: "Chef in professional kitchen",
+         profession: "Culinary Arts",
+ },
+       {
+         src: Doctor,
+         alt: "Doctor with microscope",
+         profession: "Healthcare",
+   
+       },
+       {
+         src: civil,
+         alt: "Engineer at work",
+         profession: "Engineering",
+     
+       },
+       {
+         src: chem,
+         alt: "chem_lab",
+         profession: "chemistry",
+     
+       },
+       {
+         src: student01,
+         alt: "student01",
+         profession: "student",
+  
+       },
+       {
+         src: electrical ,
+         alt: "electrical engg",
+         profession: "Engineering",
+     
+       },
+       {
+         src: researcher,
+         alt: "Doctor with microscope",
+         profession: "Healthcare",
     },
-    {
-      image: Doctor,
-      alt: "Doctor with microscope",
-      profession: "Healthcare",
-    },
-    {
-      image: civil,
-      alt: "Engineer at work",
-      profession: "Engineering",
-    },
-    {
-      image: chem,
-      alt: "chem_lab",
-      profession: "chemistry",
-    },
-    {
-      image: student01,
-      alt: "student01",
-      profession: "student",
-    },
-    {
-      image: electrical ,
-      alt: "electrical engg",
-      profession: "Engineering",
-    },
-    {
-      image: researcher,
-      alt: "Doctor with microscope",
-      profession: "Healthcare",
-    },
-  ];
+     ];
 
   useEffect(() => {
     // Set up the interval for automatic sliding
