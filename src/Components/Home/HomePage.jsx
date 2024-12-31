@@ -17,12 +17,12 @@ import Tech from "../TECH/Tech"; // Ensure the correct path
 import TrustedPartners from "../Home/TrustedPartners"; // Corrected path
 import Contact from "../Contact"; // Ensure the correct path
 import chef from "../../assets/chef.png";
-import Doctor from "../../assests/Doctor with microscope.png";
-import researcher from "../../assests/researcher.png";
-import civil from "../../assests/civil engg.png";
-import electrical from "../../assests/electrical engg.png";
-import student01 from "../../assests/student01.png";
-import chem from "../../assests/chem_lab.png";
+import Doctor from "../../assets/Doctor with microscope.png";
+import researcher from "../../assets/researcher.png";
+import civil from "../../assets/civil engg.png";
+import electrical from "../../assets/electrical engg.png";
+import student01 from "../../assets/student01.png";
+import chem from "../../assets/chem_lab.png";
 
 export default function HeroSection() { // Corrected component name
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
