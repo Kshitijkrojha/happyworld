@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Link, Element } from "react-scroll"; // Import Element from react-scroll
+import { Element } from "react-scroll"; // Import Element from react-scroll
 import Student from '../Hero/Student.png';
 import Carrer from '../Hero/Carrer.png';
 import Learn from '../Hero/Learn.png';
@@ -16,44 +16,51 @@ import '../Hero/Applynow.css'; // Ensure the correct path
 import Tech from "../TECH/Tech"; // Ensure the correct path
 import TrustedPartners from "../Home/TrustedPartners"; // Corrected path
 import Contact from "../Contact"; // Ensure the correct path
+import chef from "../../assets/chef.png";
+import Doctor from "../../assests/Doctor with microscope.png";
+import researcher from "../../assests/researcher.png";
+import civil from "../../assests/civil engg.png";
+import electrical from "../../assests/electrical engg.png";
+import student01 from "../../assests/student01.png";
+import chem from "../../assests/chem_lab.png";
 
-export default function HomePage() { // Corrected component name
+export default function HeroSection() { // Corrected component name
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Array of image objects with profession labels
   const images = [
     {
-      url: "/assets/chef.png?height=600&width=1200",
+      image: chef ,
       alt: "Chef in professional kitchen",
       profession: "Culinary Arts",
     },
     {
-      url: "/assets/Doctor with microscope.png?height=600&width=1200",
+      image: Doctor,
       alt: "Doctor with microscope",
       profession: "Healthcare",
     },
     {
-      url: "/assets/civil engg.png?height=600&width=1200",
+      image: civil,
       alt: "Engineer at work",
       profession: "Engineering",
     },
     {
-      url: "/assets/chem_lab.png?height=600&width=1200",
+      image: chem,
       alt: "chem_lab",
       profession: "chemistry",
     },
     {
-      url: "/assets/student01.png?height=600&width=1200",
+      image: student01,
       alt: "student01",
       profession: "student",
     },
     {
-      url: "/assets/electrical engg.png?height=600&width=1200",
+      image: electrical ,
       alt: "electrical engg",
       profession: "Engineering",
     },
     {
-      url: "/assets/researcher.png?height=600&width=1200",
+      image: researcher,
       alt: "Doctor with microscope",
       profession: "Healthcare",
     },
@@ -323,13 +330,6 @@ export default function HomePage() { // Corrected component name
       <Element name="contact-section">
         <Contact /> {/* Add Contact component */}
       </Element>
-      <Link
-        to="courses-jobs-section"
-        smooth={true}
-        duration={500}
-        className="scroll-down"
-      >
-      </Link>
     </motion.div>
   );
 }

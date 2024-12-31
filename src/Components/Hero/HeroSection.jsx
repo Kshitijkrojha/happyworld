@@ -17,7 +17,12 @@ import Tech from "../TECH/Tech"; // Ensure the correct path
 import TrustedPartners from "../Home/TrustedPartners"; // Corrected path
 import Contact from "../Contact"; // Ensure the correct path
 import chef from "../../assets/chef.png";
-import civil from "../../assests/civil.png";
+import Doctor from "../../assests/Doctor with microscope.png";
+import researcher from "../../assests/researcher.png";
+import civil from "../../assests/civil engg.png";
+import electrical from "../../assests/electrical engg.png";
+import student01 from "../../assests/student01.png";
+import chem from "../../assests/chem_lab.png";
 
 export default function HeroSection() { // Corrected component name
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -25,37 +30,37 @@ export default function HeroSection() { // Corrected component name
   // Array of image objects with profession labels
   const images = [
     {
-      url: chef,
+      image: chef ,
       alt: "Chef in professional kitchen",
       profession: "Culinary Arts",
     },
     {
-      url: "/src/assets/Doctor with microscope.png?height=600&width=1200",
+      image: Doctor,
       alt: "Doctor with microscope",
       profession: "Healthcare",
     },
     {
-      url: civil,
+      image: civil,
       alt: "Engineer at work",
       profession: "Engineering",
     },
     {
-      url: "/src/assets/chem_lab.png?height=600&width=1200",
+      image: chem,
       alt: "chem_lab",
       profession: "chemistry",
     },
     {
-      url: "/src/assets/student01.png?height=600&width=1200",
+      image: student01,
       alt: "student01",
       profession: "student",
     },
     {
-      url: "/src/assets/electrical engg.png?height=600&width=1200",
+      image: electrical ,
       alt: "electrical engg",
       profession: "Engineering",
     },
     {
-      url: "/src/assets/researcher.png?height=600&width=1200",
+      image: researcher,
       alt: "Doctor with microscope",
       profession: "Healthcare",
     },
