@@ -16,8 +16,8 @@ import '../Hero/Applynow.css'; // Ensure the correct path
 import Tech from "../TECH/Tech"; // Ensure the correct path
 import TrustedPartners from "../Home/TrustedPartners"; // Corrected path
 import Contact from "../Contact"; // Ensure the correct path
-import chef from "../assets/chef.png";
-import civil from "../assests/civil.png";
+import chef from "../../assets/chef.png";
+import civil from "../../assests/civil.png";
 
 export default function HeroSection() { // Corrected component name
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
