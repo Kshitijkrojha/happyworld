@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import { FaUserCircle } from "react-icons/fa";
 import "../Navbar/Navbar.css"; 
+import logo1 from "../../assets/logo1.png";
+import globe from "../../assets/globe.png";
+import logo2 from "../../assets/logo2.png";
 
 const NavLink = ({ to, children, onClick }) => (
   <Link
@@ -46,9 +49,9 @@ export default function Navbar() {
         <div className="h-[70px] flex items-center justify-between">
           {/* Logo Section */}
           <Link to="/HomePage" className="flex items-center space-x-2">
-            <img src="src/assets/logo1.png" alt="Logo Part 1" className="h-8" />
-            <img src="src/assets/globe.png" alt="Rotating Globe" className="h-8 animate-rotateGlobe" />
-            <img src="src/assets/logo2.png" alt="Logo Part 2" className="h-8" />
+            <img src={logo1} alt="Logo Part 1" className="h-8" />
+           <img src={globe} alt="Rotating Globe" className="h-8 animate-rotateGlobe" />
+            <img src={logo2} alt="Logo Part 2" className="h-8" />
           </Link>
 
           {/* Mobile Menu Button */}
