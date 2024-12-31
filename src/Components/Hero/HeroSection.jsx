@@ -16,6 +16,8 @@ import '../Hero/Applynow.css'; // Ensure the correct path
 import Tech from "../TECH/Tech"; // Ensure the correct path
 import TrustedPartners from "../Home/TrustedPartners"; // Corrected path
 import Contact from "../Contact"; // Ensure the correct path
+import chef from "../assets/chef.png";
+import civil from "../assests/civil.png";
 
 export default function HeroSection() { // Corrected component name
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -23,7 +25,7 @@ export default function HeroSection() { // Corrected component name
   // Array of image objects with profession labels
   const images = [
     {
-      url: "/src/assets/chef.png?height=600&width=1200",
+      url: chef,
       alt: "Chef in professional kitchen",
       profession: "Culinary Arts",
     },
@@ -33,7 +35,7 @@ export default function HeroSection() { // Corrected component name
       profession: "Healthcare",
     },
     {
-      url: "/src/assets/civil engg.png?height=600&width=1200",
+      url: civil,
       alt: "Engineer at work",
       profession: "Engineering",
     },
