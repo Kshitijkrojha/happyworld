@@ -30,42 +30,42 @@ export default function HeroSection() { // Corrected component name
   // Array of image objects with profession labels
   const images = [
    {
-         src: chef ,
+         src: {chef} ,
          alt: "Chef in professional kitchen",
          profession: "Culinary Arts",
  },
        {
-         src: Doctor,
+         src: {Doctor},
          alt: "Doctor with microscope",
          profession: "Healthcare",
    
        },
        {
-         src: civil,
+         src: {civil},
          alt: "Engineer at work",
          profession: "Engineering",
      
        },
        {
-         src: chem,
+         src: {chem},
          alt: "chem_lab",
          profession: "chemistry",
      
        },
        {
-         src: student01,
+         src: {student01},
          alt: "student01",
          profession: "student",
   
        },
        {
-         src: electrical ,
+         src: {electrical} ,
          alt: "electrical engg",
          profession: "Engineering",
      
        },
        {
-         src: researcher,
+         src: {researcher},
          alt: "Doctor with microscope",
          profession: "Healthcare",
     },
@@ -101,7 +101,7 @@ export default function HeroSection() { // Corrected component name
             }`}
           >
             <img
-              src={image.url}
+              src={image.src}
               alt={image.alt}
               className="object-contain mx-auto"
               style={{
