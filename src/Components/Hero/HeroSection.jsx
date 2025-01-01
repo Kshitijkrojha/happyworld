@@ -20,7 +20,7 @@ import Chef from '../Hero/Chef.png';
 import Doctor from "../Hero/Doctor_with_microscope.png";
 import Researcher from "../Hero/Joker.png";
 import Civil from "../Hero/King.png";
-import Electrical_engg from "../Hero/Electrical_engg.png";
+import Electrical_engg from "../Hero/Queen.png";
 import Student01 from "../Hero/Student01.png";
 import Chem from "../Hero/Chem_lab.png";
 
