@@ -105,8 +105,8 @@ export default function HeroSection() { // Corrected component name
               alt={image.alt}
               className="object-contain mx-auto"
               style={{
-                maxWidth: "100%", // Ensure the image fully covers the div
-                maxHeight: "100%", // Ensure the image fully covers the div
+                Width: "1200px", // Ensure the image fully covers the div
+                Height: "600px", // Ensure the image fully covers the div
               }}
             />
           </div>
