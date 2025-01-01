@@ -21,8 +21,8 @@ import Doctor from "../Hero/Doctor_with_microscope.png";
 import Researcher from "../Hero/Joker.png";
 import Civil from "../Hero/King.png";
 import Electrical_engg from "../Hero/Queen.png";
-import Student01 from "../Hero/Student01.png";
-import Chem from "../Hero/Chem_lab.png";
+import Student01 from "../Hero/Happy.png";
+import Chem from "../Hero/Noob.png";
 
 export default function HomePage() { // Corrected component name
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
