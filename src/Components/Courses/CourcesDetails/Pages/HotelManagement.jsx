@@ -61,7 +61,7 @@ export default function ChemicalCourse() {
     {
       title: "Electrical and electronics",
       rating: 4.5,
-      image: <EE></EE>, // Add image URL here
+      image: ee, // Add image URL here
     },
   ];
 
