@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Element } from "react-scroll"; // Import Element from react-scroll
+import { Link, Element } from "react-scroll"; // Import Element from react-scroll
 import Student from '../Hero/Student.png';
 import Carrer from '../Hero/Carrer.png';
 import Learn from '../Hero/Learn.png';
@@ -24,52 +24,52 @@ import electrical from "../Hero/electrical_engg.png";
 import student01 from "../Hero/Student01.png";
 import chem from "../Hero/Chem_lab.png";
 
-export default function HeroSection() { // Corrected component name
+export default function HomePage() { // Corrected component name
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Array of image objects with profession labels
-  const images = [
-   {
-         src: chef,
-         alt: "Chef in professional kitchen",
-         profession: "Culinary Arts",
- },
-       {
-         src: Doctor,
-         alt: "Doctor with microscope",
-         profession: "Healthcare",
+ const images = [
+     {
+       src: chef ,
+       alt: "Chef in professional kitchen",
+       profession: "Culinary Arts",
+   },
+     {
+       src: Doctor,
+       alt: "Doctor with microscope",
+       profession: "Healthcare",
+      
+     },
+     {
+       src: civil,
+       alt: "Engineer at work",
+       profession: "Engineering",
+     
+     },
+     {
+       src: chem,
+       alt: "chem_lab",
+       profession: "chemistry",
    
-       },
-       {
-         src: civil,
-         alt: "Engineer at work",
-         profession: "Engineering",
+     },
+     {
+       src: student01,
+       alt: "student01",
+       profession: "student",
      
-       },
-       {
-         src: chem,
-         alt: "chem_lab",
-         profession: "chemistry",
+     },
+     {
+       src: electrical ,
+       alt: "electrical engg",
+       profession: "Engineering",
      
-       },
-       {
-         src: student01,
-         alt: "student01",
-         profession: "student",
-  
-       },
-       {
-         src: electrical ,
-         alt: "electrical engg",
-         profession: "Engineering",
-     
-       },
-       {
-         src: researcher,
-         alt: "Doctor with microscope",
-         profession: "Healthcare",
-    },
-     ];
+     },
+     {
+       src: researcher,
+       alt: "Doctor with microscope",
+       profession: "Healthcare",
+     }
+   ];
 
   useEffect(() => {
     // Set up the interval for automatic sliding
@@ -105,8 +105,8 @@ export default function HeroSection() { // Corrected component name
               alt={image.alt}
               className="object-contain mx-auto"
               style={{
-                maxWidth: "100%", // Ensure the image fully covers the div
-                maxHeight: "100%", // Ensure the image fully covers the div
+                Width: "1200px", // Ensure the image fully covers the div
+                Height: "600px", // Ensure the image fully covers the div
               }}
             />
           </div>
@@ -335,6 +335,13 @@ export default function HeroSection() { // Corrected component name
       <Element name="contact-section">
         <Contact /> {/* Add Contact component */}
       </Element>
+      <Link
+        to="courses-jobs-section"
+        smooth={true}
+        duration={500}
+        className="scroll-down"
+      >
+      </Link>
     </motion.div>
   );
 }
