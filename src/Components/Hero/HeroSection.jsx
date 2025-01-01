@@ -105,8 +105,8 @@ export default function HomePage() { // Corrected component name
               alt={image.alt}
               className="object-contain mx-auto"
               style={{
-                Width: "1200px", // Ensure the image fully covers the div
-                Height: "600px", // Ensure the image fully covers the div
+                width: "1200px", // Ensure the image fully covers the div
+                height: "600px", // Ensure the image fully covers the div
               }}
             />
           </div>
