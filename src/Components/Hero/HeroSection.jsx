@@ -24,7 +24,7 @@ import Electrical_engg from "../Hero/Electrical_engg.png";
 import Student01 from "../Hero/Student01.png";
 import Chem from "../Hero/Chem_lab.png";
 
-export default function HomePage() { // Corrected component name
+export default function HeroSection() { // Corrected component name
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Array of image objects with profession labels
